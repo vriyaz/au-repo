@@ -42,9 +42,9 @@ class CalculatorBrain
         //knownOps[√  × − ÷ +]
 
         //knownOps["×"] = Op.BinaryOperation("×", *) // * is a function
-        learnOp(Op.BinaryOperation("÷", {$1 / $0})) // using closures, cant use % coz order matters
-        learnOp(Op.BinaryOperation("−", {$1 - $0})) // cant use - coz order matters
-        learnOp(Op.BinaryOperation("×", *))
+        learnOp(Op.BinaryOperation("/", {$1 / $0})) // using closures, cant use % coz order matters
+        learnOp(Op.BinaryOperation("-", {$1 - $0})) // cant use - coz order matters
+        learnOp(Op.BinaryOperation("*", *))
         learnOp(Op.BinaryOperation("+", +))
         learnOp(Op.UnaryOperation("√", sqrt)) // use existing function that matches the signature
     }

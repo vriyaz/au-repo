@@ -14,11 +14,11 @@
 		<string>https://github.com/vriyaz/au-repo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>01 Quotes/Quotes.xcodeproj</string>
+	<string>Apps/01 Quotes/Quotes.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>BD3DC0EE49C2807A38FD319C74AC6ACA8BB0E42D</key>
-		<string>../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/vriyaz/au-repo.git</string>
