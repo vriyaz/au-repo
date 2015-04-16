@@ -11,19 +11,21 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var messageLabel: UILabel!
-
-    let messages : [String] = [
-                                "may the force be with you",
-                                "live long and prosper",
-                                "to infinity and beyond",
-                                "space is big. you just wont believe how vastly, hugely, mind-bogglingly big it is"
-                              ]
-
+    var quotes : [String] = []
     var index : Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let path = NSBundle.mainBundle().pathForResource("quotes", ofType: "txt")
+        if let content = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: nil) {
+            for quote in content.componentsSeparatedByString("\n\n") {
+                if quote != "" && !quote.hasPrefix("#"){
+                    println("\(quote)")
+                    quotes.append(quote.stringByReplacingOccurrencesOfString(":", withString: ":\n", options: NSStringCompareOptions.LiteralSearch, range: nil))
+                }
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,11 +35,11 @@ class ViewController: UIViewController {
 
     @IBAction func doButtonTap(sender: AnyObject) {
 
-        println("button touched! \(index) : \(self.messages[index])")
+        println("button touched! \(index) : \(self.quotes[index])")
 
-        self.messageLabel.text = self.messages[index++]
+        self.messageLabel.text = self.quotes[index++]
 
-        index %= self.messages.count
+        index %= self.quotes.count
     }
 
 }
