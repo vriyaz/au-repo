@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0620"
+   LastUpgradeVersion = "0630"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E1FDD7521ACB9BAF00EBA143"
-               BuildableName = "AlphaApp.app"
-               BlueprintName = "AlphaApp"
-               ReferencedContainer = "container:AlphaApp.xcodeproj">
+               BuildableName = "Quotes.app"
+               BlueprintName = "Quotes"
+               ReferencedContainer = "container:Quotes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E1FDD7671ACB9BAF00EBA143"
-               BuildableName = "AlphaAppTests.xctest"
-               BlueprintName = "AlphaAppTests"
-               ReferencedContainer = "container:AlphaApp.xcodeproj">
+               BuildableName = "QuotesTests.xctest"
+               BlueprintName = "QuotesTests"
+               ReferencedContainer = "container:Quotes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E1FDD7671ACB9BAF00EBA143"
-               BuildableName = "AlphaAppTests.xctest"
-               BlueprintName = "AlphaAppTests"
-               ReferencedContainer = "container:AlphaApp.xcodeproj">
+               BuildableName = "QuotesTests.xctest"
+               BlueprintName = "QuotesTests"
+               ReferencedContainer = "container:Quotes.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1FDD7521ACB9BAF00EBA143"
-            BuildableName = "AlphaApp.app"
-            BlueprintName = "AlphaApp"
-            ReferencedContainer = "container:AlphaApp.xcodeproj">
+            BuildableName = "Quotes.app"
+            BlueprintName = "Quotes"
+            ReferencedContainer = "container:Quotes.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1FDD7521ACB9BAF00EBA143"
-            BuildableName = "AlphaApp.app"
-            BlueprintName = "AlphaApp"
-            ReferencedContainer = "container:AlphaApp.xcodeproj">
+            BuildableName = "Quotes.app"
+            BlueprintName = "Quotes"
+            ReferencedContainer = "container:Quotes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1FDD7521ACB9BAF00EBA143"
-            BuildableName = "AlphaApp.app"
-            BlueprintName = "AlphaApp"
-            ReferencedContainer = "container:AlphaApp.xcodeproj">
+            BuildableName = "Quotes.app"
+            BlueprintName = "Quotes"
+            ReferencedContainer = "container:Quotes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

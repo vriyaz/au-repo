@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  AlphaApp
+//  Quotes
 //
-//  Created by Riyaz VALI on 3/31/15.
+//  Created by Riyaz Vali on 3/31/15.
 //  Copyright (c) 2015 Riyaz Vali. All rights reserved.
 //
 

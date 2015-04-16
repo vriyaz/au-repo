@@ -1,6 +1,6 @@
 //
 //  AlphaAppTests.swift
-//  AlphaAppTests
+//  QuotesTests
 //
 //  Created by Riyaz VALI on 3/31/15.
 //  Copyright (c) 2015 Riyaz Vali. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class AlphaAppTests: XCTestCase {
+class QuotesTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

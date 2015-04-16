@@ -12,7 +12,7 @@
 		E1FDD75E1ACB9BAF00EBA143 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1FDD75C1ACB9BAF00EBA143 /* Main.storyboard */; };
 		E1FDD7601ACB9BAF00EBA143 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1FDD75F1ACB9BAF00EBA143 /* Images.xcassets */; };
 		E1FDD7631ACB9BAF00EBA143 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1FDD7611ACB9BAF00EBA143 /* LaunchScreen.xib */; };
-		E1FDD76F1ACB9BAF00EBA143 /* AlphaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FDD76E1ACB9BAF00EBA143 /* AlphaAppTests.swift */; };
+		E1FDD76F1ACB9BAF00EBA143 /* QuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FDD76E1ACB9BAF00EBA143 /* QuotesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,21 +21,21 @@
 			containerPortal = E1FDD74B1ACB9BAF00EBA143 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E1FDD7521ACB9BAF00EBA143;
-			remoteInfo = AlphaApp;
+			remoteInfo = Quotes;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E1FDD7531ACB9BAF00EBA143 /* AlphaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlphaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1FDD7531ACB9BAF00EBA143 /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FDD7571ACB9BAF00EBA143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1FDD7581ACB9BAF00EBA143 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1FDD75A1ACB9BAF00EBA143 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E1FDD75D1ACB9BAF00EBA143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1FDD75F1ACB9BAF00EBA143 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E1FDD7621ACB9BAF00EBA143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E1FDD7681ACB9BAF00EBA143 /* AlphaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlphaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1FDD7681ACB9BAF00EBA143 /* QuotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FDD76D1ACB9BAF00EBA143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1FDD76E1ACB9BAF00EBA143 /* AlphaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaAppTests.swift; sourceTree = "<group>"; };
+		E1FDD76E1ACB9BAF00EBA143 /* QuotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +59,8 @@
 		E1FDD74A1ACB9BAF00EBA143 = {
 			isa = PBXGroup;
 			children = (
-				E1FDD7551ACB9BAF00EBA143 /* AlphaApp */,
-				E1FDD76B1ACB9BAF00EBA143 /* AlphaAppTests */,
+				E1FDD7551ACB9BAF00EBA143 /* Quotes */,
+				E1FDD76B1ACB9BAF00EBA143 /* QuotesTests */,
 				E1FDD7541ACB9BAF00EBA143 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,40 +68,40 @@
 		E1FDD7541ACB9BAF00EBA143 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E1FDD7531ACB9BAF00EBA143 /* AlphaApp.app */,
-				E1FDD7681ACB9BAF00EBA143 /* AlphaAppTests.xctest */,
+				E1FDD7531ACB9BAF00EBA143 /* Quotes.app */,
+				E1FDD7681ACB9BAF00EBA143 /* QuotesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E1FDD7551ACB9BAF00EBA143 /* AlphaApp */ = {
+		E1FDD7551ACB9BAF00EBA143 /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
-				E1FDD7581ACB9BAF00EBA143 /* AppDelegate.swift */,
 				E1FDD75A1ACB9BAF00EBA143 /* ViewController.swift */,
 				E1FDD75C1ACB9BAF00EBA143 /* Main.storyboard */,
-				E1FDD75F1ACB9BAF00EBA143 /* Images.xcassets */,
-				E1FDD7611ACB9BAF00EBA143 /* LaunchScreen.xib */,
 				E1FDD7561ACB9BAF00EBA143 /* Supporting Files */,
 			);
-			path = AlphaApp;
+			path = Quotes;
 			sourceTree = "<group>";
 		};
 		E1FDD7561ACB9BAF00EBA143 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E1FDD75F1ACB9BAF00EBA143 /* Images.xcassets */,
+				E1FDD7581ACB9BAF00EBA143 /* AppDelegate.swift */,
 				E1FDD7571ACB9BAF00EBA143 /* Info.plist */,
+				E1FDD7611ACB9BAF00EBA143 /* LaunchScreen.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E1FDD76B1ACB9BAF00EBA143 /* AlphaAppTests */ = {
+		E1FDD76B1ACB9BAF00EBA143 /* QuotesTests */ = {
 			isa = PBXGroup;
 			children = (
-				E1FDD76E1ACB9BAF00EBA143 /* AlphaAppTests.swift */,
+				E1FDD76E1ACB9BAF00EBA143 /* QuotesTests.swift */,
 				E1FDD76C1ACB9BAF00EBA143 /* Supporting Files */,
 			);
-			path = AlphaAppTests;
+			path = QuotesTests;
 			sourceTree = "<group>";
 		};
 		E1FDD76C1ACB9BAF00EBA143 /* Supporting Files */ = {
@@ -115,9 +115,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E1FDD7521ACB9BAF00EBA143 /* AlphaApp */ = {
+		E1FDD7521ACB9BAF00EBA143 /* Quotes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1FDD7721ACB9BAF00EBA143 /* Build configuration list for PBXNativeTarget "AlphaApp" */;
+			buildConfigurationList = E1FDD7721ACB9BAF00EBA143 /* Build configuration list for PBXNativeTarget "Quotes" */;
 			buildPhases = (
 				E1FDD74F1ACB9BAF00EBA143 /* Sources */,
 				E1FDD7501ACB9BAF00EBA143 /* Frameworks */,
@@ -127,14 +127,14 @@
 			);
 			dependencies = (
 			);
-			name = AlphaApp;
-			productName = AlphaApp;
-			productReference = E1FDD7531ACB9BAF00EBA143 /* AlphaApp.app */;
+			name = Quotes;
+			productName = Quotes;
+			productReference = E1FDD7531ACB9BAF00EBA143 /* Quotes.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E1FDD7671ACB9BAF00EBA143 /* AlphaAppTests */ = {
+		E1FDD7671ACB9BAF00EBA143 /* QuotesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1FDD7751ACB9BAF00EBA143 /* Build configuration list for PBXNativeTarget "AlphaAppTests" */;
+			buildConfigurationList = E1FDD7751ACB9BAF00EBA143 /* Build configuration list for PBXNativeTarget "QuotesTests" */;
 			buildPhases = (
 				E1FDD7641ACB9BAF00EBA143 /* Sources */,
 				E1FDD7651ACB9BAF00EBA143 /* Frameworks */,
@@ -145,9 +145,9 @@
 			dependencies = (
 				E1FDD76A1ACB9BAF00EBA143 /* PBXTargetDependency */,
 			);
-			name = AlphaAppTests;
-			productName = AlphaAppTests;
-			productReference = E1FDD7681ACB9BAF00EBA143 /* AlphaAppTests.xctest */;
+			name = QuotesTests;
+			productName = QuotesTests;
+			productReference = E1FDD7681ACB9BAF00EBA143 /* QuotesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E1FDD74E1ACB9BAF00EBA143 /* Build configuration list for PBXProject "AlphaApp" */;
+			buildConfigurationList = E1FDD74E1ACB9BAF00EBA143 /* Build configuration list for PBXProject "Quotes" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -181,8 +181,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E1FDD7521ACB9BAF00EBA143 /* AlphaApp */,
-				E1FDD7671ACB9BAF00EBA143 /* AlphaAppTests */,
+				E1FDD7521ACB9BAF00EBA143 /* Quotes */,
+				E1FDD7671ACB9BAF00EBA143 /* QuotesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -221,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1FDD76F1ACB9BAF00EBA143 /* AlphaAppTests.swift in Sources */,
+				E1FDD76F1ACB9BAF00EBA143 /* QuotesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +230,7 @@
 /* Begin PBXTargetDependency section */
 		E1FDD76A1ACB9BAF00EBA143 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E1FDD7521ACB9BAF00EBA143 /* AlphaApp */;
+			target = E1FDD7521ACB9BAF00EBA143 /* Quotes */;
 			targetProxy = E1FDD7691ACB9BAF00EBA143 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -338,7 +338,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AlphaApp/Info.plist;
+				INFOPLIST_FILE = Quotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -348,7 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AlphaApp/Info.plist;
+				INFOPLIST_FILE = Quotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -366,10 +366,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = AlphaAppTests/Info.plist;
+				INFOPLIST_FILE = QuotesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlphaApp.app/AlphaApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quotes.app/Quotes";
 			};
 			name = Debug;
 		};
@@ -381,17 +381,17 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = AlphaAppTests/Info.plist;
+				INFOPLIST_FILE = QuotesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlphaApp.app/AlphaApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quotes.app/Quotes";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E1FDD74E1ACB9BAF00EBA143 /* Build configuration list for PBXProject "AlphaApp" */ = {
+		E1FDD74E1ACB9BAF00EBA143 /* Build configuration list for PBXProject "Quotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1FDD7701ACB9BAF00EBA143 /* Debug */,
@@ -400,21 +400,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1FDD7721ACB9BAF00EBA143 /* Build configuration list for PBXNativeTarget "AlphaApp" */ = {
+		E1FDD7721ACB9BAF00EBA143 /* Build configuration list for PBXNativeTarget "Quotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1FDD7731ACB9BAF00EBA143 /* Debug */,
 				E1FDD7741ACB9BAF00EBA143 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		E1FDD7751ACB9BAF00EBA143 /* Build configuration list for PBXNativeTarget "AlphaAppTests" */ = {
+		E1FDD7751ACB9BAF00EBA143 /* Build configuration list for PBXNativeTarget "QuotesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1FDD7761ACB9BAF00EBA143 /* Debug */,
 				E1FDD7771ACB9BAF00EBA143 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

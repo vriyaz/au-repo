@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  AlphaApp
+//  Quotes
 //
-//  Created by Riyaz VALI on 3/31/15.
+//  Created by Riyaz Vali on 3/31/15.
 //  Copyright (c) 2015 Riyaz Vali. All rights reserved.
 //
 
@@ -12,7 +12,12 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var messageLabel: UILabel!
 
-    let messages : [String] = ["may the force be with you", "live long and prosper", "to infinity and beyond", "space is big. you just wont believe how vastly, hugely, mind-bogglingly big it is"]
+    let messages : [String] = [
+                                "may the force be with you",
+                                "live long and prosper",
+                                "to infinity and beyond",
+                                "space is big. you just wont believe how vastly, hugely, mind-bogglingly big it is"
+                              ]
 
     var index : Int = 0
 
