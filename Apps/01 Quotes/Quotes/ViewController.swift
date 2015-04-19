@@ -26,6 +26,17 @@ class ViewController: UIViewController {
                 }
             }
         }
+
+        if let path = NSBundle.mainBundle().pathForResource("quotes", ofType: "json") {
+            if let data = NSData(contentsOfFile: path) {
+                let json = JSON(data: data, options: NSJSONReadingOptions.AllowFragments, error: nil)
+                println("jsonData:\(json)")
+                let key = "hello"
+                let value = json["dict1"][1]["a2"]
+                println("\(key)=\(value)")
+                //println(NSString(format: "%s=%s", key, value.stringValue)) // doesnt work
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

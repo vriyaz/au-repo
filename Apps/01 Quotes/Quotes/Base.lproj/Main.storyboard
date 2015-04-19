@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quotes from Batman Trilogy ..." lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="y14-8M-ZIF">
-                                <rect key="frame" x="16" y="80" width="568" height="21"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                <rect key="frame" x="16" y="80" width="568" height="17"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0U3-ha-vp7">
-                                <rect key="frame" x="264" y="484" width="73" height="36"/>
+                                <rect key="frame" x="264" y="514" width="73" height="36"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
                                 <state key="normal" title="Hit Me!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -40,7 +40,7 @@
                             <constraint firstAttribute="centerX" secondItem="y14-8M-ZIF" secondAttribute="centerX" id="HYQ-HI-PYP"/>
                             <constraint firstAttribute="centerX" secondItem="0U3-ha-vp7" secondAttribute="centerX" id="MbH-cz-dwS"/>
                             <constraint firstItem="y14-8M-ZIF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XKa-bv-bnB"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0U3-ha-vp7" secondAttribute="bottom" constant="80" id="nKH-zt-KSw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0U3-ha-vp7" secondAttribute="bottom" constant="50" id="nKH-zt-KSw"/>
                             <constraint firstItem="y14-8M-ZIF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xjC-eH-yLA"/>
                         </constraints>
                     </view>
