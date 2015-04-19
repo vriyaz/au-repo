@@ -1,0 +1,7 @@
+{
+
+"hello":"world",
+"swift":"apps",
+"array1": [ "line11", "line12", "line13"],
+"dict1" : [ { "a1":"x1" }, { "a2":"x2"} ]
+}

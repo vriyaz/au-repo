@@ -2,6 +2,7 @@
 
 import UIKit
 
+
 var str = "Hello, playground"
 
 
@@ -97,4 +98,21 @@ for (kind, numbers) in interestingNumbers {
 
 largest
 
+var json: JSON =  ["I":"am", "a":"json"]
 
+json["name"] = JSON("new-name")
+json[0] = JSON(1)
+
+json
+
+if let path = NSBundle.mainBundle().pathForResource("quotes", ofType: "json") {
+    if let data = NSData(contentsOfFile: path) {
+        let json = JSON(data: data, options: NSJSONReadingOptions.AllowFragments, error: nil)
+        println("jsonData:\(json)")
+        let key = "hello"
+        let value = json["dict1"][1]["a2"]
+        println("\(key)=\(value)")
+        //println(NSString(format: "%s=%s", key, value.stringValue)) // doesnt work
+        json["dict1"][1]["a2"].stringValue
+    }
+}
