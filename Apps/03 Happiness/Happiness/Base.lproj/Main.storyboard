@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="s6X-0w-5PJ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Happiness View Controller-->
@@ -18,7 +19,24 @@
                         <subviews>
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Wry-7q-lyX" customClass="FaceView" customModule="Happiness" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="xET-p3-vpG">
+                                        <rect key="frame" x="6" y="547" width="588" height="31"/>
+                                        <connections>
+                                            <action selector="changeHappinessViaSlider:" destination="s6X-0w-5PJ" eventType="valueChanged" id="Wnr-uC-Moz"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="xET-p3-vpG" firstAttribute="leading" secondItem="Wry-7q-lyX" secondAttribute="leadingMargin" id="jCV-wE-51I"/>
+                                    <constraint firstItem="xET-p3-vpG" firstAttribute="trailing" secondItem="Wry-7q-lyX" secondAttribute="trailingMargin" id="jdS-iZ-lAX"/>
+                                    <constraint firstAttribute="bottom" secondItem="xET-p3-vpG" secondAttribute="bottom" constant="23" id="x15-3D-xOv"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7BJ-wI-CF0" appends="YES" id="p2L-v8-U7f"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -29,8 +47,16 @@
                             <constraint firstAttribute="trailing" secondItem="Wry-7q-lyX" secondAttribute="trailing" id="cjo-kB-aWw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="faceView" destination="Wry-7q-lyX" id="v2h-QW-eJF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="40V-kX-We0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="7BJ-wI-CF0">
+                    <connections>
+                        <action selector="changeHappiness:" destination="s6X-0w-5PJ" id="rEb-8O-2lK"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="237" y="450"/>
         </scene>

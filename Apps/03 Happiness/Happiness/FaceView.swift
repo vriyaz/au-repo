@@ -8,11 +8,17 @@
 
 import UIKit
 
+// delegate
+protocol FaceViewDataSource: class { // only class will implement, no structs or enum
+    func smilinessForFaceView(sender: FaceView) -> Double?  // pass self along
+}
+
+@IBDesignable
 class FaceView: UIView {
 
-    var lineWidth: CGFloat = 3 { didSet { setNeedsDisplay() } }
-    var color: UIColor = UIColor.redColor() { didSet { setNeedsDisplay() } }
-    var scale: CGFloat = 0.90 { didSet { setNeedsDisplay() } }
+    @IBInspectable var lineWidth: CGFloat = 4.0 { didSet { setNeedsDisplay() } }
+    @IBInspectable var color: UIColor = UIColor.redColor() { didSet { setNeedsDisplay() } }
+    @IBInspectable var scale: CGFloat = 0.70 { didSet { setNeedsDisplay() } }
 
     var faceCenter: CGPoint {
         return convertPoint(center, fromView: superview)
@@ -21,6 +27,8 @@ class FaceView: UIView {
     var faceRadius: CGFloat {
         return min(bounds.size.width, bounds.size.height) * scale / 2
     }
+
+    weak var dataSource: FaceViewDataSource? // deal with cyclic dependencies as the controller also points to FaceView via the heirarchy
 
     private struct Scaling {
         static let FaceRadiusToEyeRadiusRatio: CGFloat = 10
@@ -32,6 +40,13 @@ class FaceView: UIView {
     }
 
     private enum Eye { case Left, Right }
+
+    func scale(gesture: UIPinchGestureRecognizer) {
+        if gesture.state == .Changed {
+            scale *= gesture.scale
+            gesture.scale = 1
+        }
+    }
 
     private func bezierPathForEye(whichEye: Eye) -> UIBezierPath {
         let eyeRadius = faceRadius / Scaling.FaceRadiusToEyeRadiusRatio
@@ -79,7 +94,7 @@ class FaceView: UIView {
         bezierPathForEye(.Left).stroke()
         bezierPathForEye(.Right).stroke()
 
-        let smiliness = -1.0
+        let smiliness = dataSource?.smilinessForFaceView(self) ?? 0.0
         let smilePath = bezierPathForSmile(smiliness)
         smilePath.stroke()
     }
