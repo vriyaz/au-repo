@@ -18,7 +18,7 @@ class FaceView: UIView {
 
     @IBInspectable var lineWidth: CGFloat = 4.0 { didSet { setNeedsDisplay() } }
     @IBInspectable var color: UIColor = UIColor.redColor() { didSet { setNeedsDisplay() } }
-    @IBInspectable var scale: CGFloat = 0.70 { didSet { setNeedsDisplay() } }
+    @IBInspectable var scale: CGFloat = 0.50 { didSet { setNeedsDisplay() } }
 
     var faceCenter: CGPoint {
         return convertPoint(center, fromView: superview)
@@ -88,8 +88,12 @@ class FaceView: UIView {
         let facePath = UIBezierPath(arcCenter: faceCenter, radius: faceRadius, startAngle: 0, endAngle: CGFloat(2*M_PI), clockwise: true)
 
         facePath.lineWidth = lineWidth;
+        color = UIColor.redColor()
         color.set()
         facePath.stroke()
+        color = UIColor.whiteColor()
+        color.setFill()
+        facePath.fill()
 
         bezierPathForEye(.Left).stroke()
         bezierPathForEye(.Right).stroke()

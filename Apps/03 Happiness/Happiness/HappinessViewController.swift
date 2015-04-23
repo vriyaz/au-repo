@@ -13,6 +13,7 @@ class HappinessViewController: UIViewController, FaceViewDataSource {
     @IBOutlet weak var faceView: FaceView! { // good place to add gesture recognizers
         didSet {
             faceView.dataSource = self
+            // gesture handling #1
             faceView.addGestureRecognizer(UIPinchGestureRecognizer(target: faceView, action: "scale:"))
         }
     }
@@ -21,7 +22,7 @@ class HappinessViewController: UIViewController, FaceViewDataSource {
         static let HappinessGestureScale: CGFloat = 4
     }
 
-    // a different way of doing it
+    // gesture handling #2 - a different way of doing it
     @IBAction func changeHappiness(gesture: UIPanGestureRecognizer) {
         switch gesture.state {
         case .Ended: fallthrough
@@ -54,6 +55,10 @@ class HappinessViewController: UIViewController, FaceViewDataSource {
         return Double(happiness - 50)/50
     }
 
+    @IBAction func changeScaleViaSlider(sender: UISlider) {
+        faceView.scale = CGFloat(sender.value)
+    }
+    
     @IBAction func changeHappinessViaSlider(sender: UISlider) {
         println("sliderValue: \(sender.value)")
         happiness = Int(sender.value)

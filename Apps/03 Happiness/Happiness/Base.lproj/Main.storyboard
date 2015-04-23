@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="s6X-0w-5PJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="s6X-0w-5PJ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -21,18 +21,27 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="xET-p3-vpG">
-                                        <rect key="frame" x="6" y="547" width="588" height="31"/>
+                                        <rect key="frame" x="6" y="560" width="588" height="31"/>
                                         <connections>
                                             <action selector="changeHappinessViaSlider:" destination="s6X-0w-5PJ" eventType="valueChanged" id="Wnr-uC-Moz"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.10000000000000001" maxValue="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="RQK-Y4-dwf">
+                                        <rect key="frame" x="6" y="528" width="588" height="31"/>
+                                        <connections>
+                                            <action selector="changeScaleViaSlider:" destination="s6X-0w-5PJ" eventType="valueChanged" id="2zO-rO-n5h"/>
                                         </connections>
                                     </slider>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstItem="RQK-Y4-dwf" firstAttribute="leading" secondItem="xET-p3-vpG" secondAttribute="leading" id="O7W-Ny-IC5"/>
+                                    <constraint firstItem="xET-p3-vpG" firstAttribute="top" secondItem="RQK-Y4-dwf" secondAttribute="bottom" constant="2" id="Poj-1s-dth"/>
+                                    <constraint firstItem="RQK-Y4-dwf" firstAttribute="trailing" secondItem="xET-p3-vpG" secondAttribute="trailing" id="h0p-mN-RM1"/>
                                     <constraint firstItem="xET-p3-vpG" firstAttribute="leading" secondItem="Wry-7q-lyX" secondAttribute="leadingMargin" id="jCV-wE-51I"/>
                                     <constraint firstItem="xET-p3-vpG" firstAttribute="trailing" secondItem="Wry-7q-lyX" secondAttribute="trailingMargin" id="jdS-iZ-lAX"/>
-                                    <constraint firstAttribute="bottom" secondItem="xET-p3-vpG" secondAttribute="bottom" constant="23" id="x15-3D-xOv"/>
+                                    <constraint firstAttribute="bottom" secondItem="xET-p3-vpG" secondAttribute="bottom" constant="10" id="x15-3D-xOv"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="7BJ-wI-CF0" appends="YES" id="p2L-v8-U7f"/>
@@ -58,7 +67,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="237" y="450"/>
+            <point key="canvasLocation" x="208" y="386"/>
         </scene>
     </scenes>
 </document>
