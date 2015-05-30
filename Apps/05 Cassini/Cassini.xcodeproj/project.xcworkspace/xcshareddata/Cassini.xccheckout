@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>42B238D7-B70D-4CE8-94E4-7479BD34DB4A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BD3DC0EE49C2807A38FD319C74AC6ACA8BB0E42D</key>
+		<string>https://github.com/vriyaz/au-repo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Apps/Cassini/Cassini.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BD3DC0EE49C2807A38FD319C74AC6ACA8BB0E42D</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vriyaz/au-repo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BD3DC0EE49C2807A38FD319C74AC6ACA8BB0E42D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BD3DC0EE49C2807A38FD319C74AC6ACA8BB0E42D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>au-repo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
